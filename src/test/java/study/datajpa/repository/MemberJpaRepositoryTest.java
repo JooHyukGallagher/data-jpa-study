@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 import study.datajpa.entity.Member;
+import study.datajpa.entity.Team;
 
 import java.util.List;
 
@@ -94,4 +95,6 @@ class MemberJpaRepositoryTest {
         //then
         assertThat(resultCount).isEqualTo(3);
     }
+
+
 }

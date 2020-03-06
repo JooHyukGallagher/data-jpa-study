@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 
+//@NamedEntityGraph(name = "Member.all", attributeNodes = @NamedAttributeNode("team"))
 @ToString(of = {"id", "username", "age"})
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter @Setter
