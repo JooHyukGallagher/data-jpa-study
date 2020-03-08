@@ -7,11 +7,13 @@ import javax.persistence.*;
 //@NamedEntityGraph(name = "Member.all", attributeNodes = @NamedAttributeNode("team"))
 @ToString(of = {"id", "username", "age"})
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Getter @Setter
+@Getter
+@Setter
 @Entity
-public class Member {
+public class Member extends BaseEntity {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String username;
